@@ -9,5 +9,5 @@ public interface StudentService {
 	Student saveStudent(Student entity);
 	Student getStudentById(Long id);
 	Student updateStudent(Long id, Student entity);
-	
+	void deleteStudentById(Long id);
 }

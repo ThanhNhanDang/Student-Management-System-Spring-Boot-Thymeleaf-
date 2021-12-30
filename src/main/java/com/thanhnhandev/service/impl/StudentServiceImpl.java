@@ -45,5 +45,12 @@ public class StudentServiceImpl implements StudentService{
 		entityRepo.setEmail(entity.getEmail());
 		return studentRepository.save(entityRepo);
 	}
+
+	@Override
+	public void deleteStudentById(Long id) {
+		studentRepository.deleteById(id);
+		
+	}
 	
+
 }
